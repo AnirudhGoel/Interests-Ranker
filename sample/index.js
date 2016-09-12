@@ -8,7 +8,7 @@ function addUser(event) {
 
 		usernames = usernames.replace(/,\s*$/, "");
 
-		var url = "https://interests-ranker.herokuapp.com/topics.php?user=" + usernames;
+		var url = "/topics.php?user=" + usernames;
 		$("#output").html("");
 		console.log(url);
 		$.get(url, function(data){
