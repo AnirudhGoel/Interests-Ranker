@@ -11,4 +11,4 @@ This app can be used for multiple purposes such as -
 
 --------------------------
 
-If you have any issues contact me via [email](http://scr.im/3hmx).
+Contact me via [email](http://scr.im/3hmx).
