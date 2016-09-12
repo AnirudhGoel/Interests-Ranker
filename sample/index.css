@@ -1,0 +1,31 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600|Lato:300,400';
+body {
+	/*background-color: grey;*/
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 400;
+	background-color: #F0F8FF;
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+.container {
+	background-color: #F0F8FF;
+	min-height: 100vh;
+}
+
+.block {
+	/*border: black 3px solid;*/
+	min-height: 400px;
+}
+
+.box {
+	margin-top: 20px;
+	font-size: 24px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	background-color: white;
+	width: 300px;
+	height: 20px;
+}
