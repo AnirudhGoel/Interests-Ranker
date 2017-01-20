@@ -1,6 +1,8 @@
 function addUser(event) {
 	event.preventDefault();
 	if ($("#user").val() != "") {
+		$("#output").html("<br><br><i class=\"fa fa-spinner fa-spin fa-4x fa-pulse\" aria-hidden=\"true\"></i>");
+
 		usernames = usernames + "," + $("#user").val();
 		$("#input").append("<div class='box'>" + $("#user").val() + "</div>");
 
@@ -9,7 +11,6 @@ function addUser(event) {
 		usernames = usernames.replace(/,\s*$/, "");
 
 		var url = "/topics.php?user=" + usernames;
-		$("#output").html("");
 		console.log(url);
 		$.get(url, function(data){
 	    	var json = JSON.parse(data);
