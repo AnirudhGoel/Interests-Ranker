@@ -14,8 +14,8 @@ function addUser(event) {
 		console.log(url);
 		$.get(url, function(data){
 	    	var json = JSON.parse(data);
+    		$("#output").html("");
 	    	for(var i = 0; i < 10; i++) {
-	    		$("#output").html("");
 	    		$("#output").append("<div class='box'>" + json[i]["name"] + " : " + json[i]["freq"] + "</div>");
 	    	}
 	    });
